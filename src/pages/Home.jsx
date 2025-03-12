@@ -3,7 +3,7 @@ import officeClipart from "../assets/Home/office-clipart.png";
 import Partners from "../components/extra/Partners";
 export default function Home() {
   return (
-    <div className="bg-[#161616] min-h-screen w-full p-4 md:p-8">
+    <div className="bg-[#161616] min-h-screen w-full pl-4 pr-4 pb-4">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
         {/* Left div - Text content */}
         <div className="w-full md:w-1/2 p-4 md:p-8 flex flex-col gap-6">
