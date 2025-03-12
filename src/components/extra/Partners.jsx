@@ -20,7 +20,7 @@ export default function Partners() {
     return (
         <div>
             <h2 className="text-center text-3xl text-white font-bold mb-12">Trusted by businesses worldwide</h2>
-            <div className="flex flex-wrap justify-center items-center gap-20">
+            <div className="flex flex-wrap justify-center items-center gap-40">
                 <img 
                     src={amazon} 
                     alt="Partner Logo 1" 
