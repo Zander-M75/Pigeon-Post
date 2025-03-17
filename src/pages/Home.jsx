@@ -1,6 +1,8 @@
 import BlackButton from "../components/common/BlackButton";
 import officeClipart from "../assets/Home/office-clipart.png";
 import Partners from "../components/extra/Partners";
+import ContentBox from "../components/common/ContentBox";
+
 export default function Home() {
   return (
     <div className="bg-[#161616] min-h-screen w-full pl-4 pr-4 pb-4">
@@ -34,6 +36,7 @@ export default function Home() {
       <div className="max-w-7xl mx-auto pb-20">
         <Partners />
       </div>
+      <ContentBox />
     </div>
   )
 }
