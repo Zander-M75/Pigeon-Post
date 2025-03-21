@@ -5,7 +5,7 @@ import ContentBox from "../components/common/ContentBox";
 
 export default function Home() {
   return (
-    <div className="bg-[#161616] min-h-screen w-full pl-4 pr-4 pb-4">
+    <div className="bg-[#161616] min-h-screen w-full pl-4 pr-4 pb-4 pt-14">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between px-8 md:px-16 py-20 md:py-32">
         {/* Left div - Text content */}
         <div className="w-full md:w-1/2 flex flex-col gap-8">
@@ -36,8 +36,12 @@ export default function Home() {
       <div className="max-w-7xl mx-auto pb-20">
         <Partners />
       </div>
-      <ContentBox />
-    </div>
+      
+      <div className="max-w-7xl mx-auto pb-20">
+        <ContentBox />
+      </div>
+
+  </div>
   )
 }
 
