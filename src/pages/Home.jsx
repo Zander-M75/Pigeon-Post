@@ -2,6 +2,8 @@ import BlackButton from "../components/common/BlackButton";
 import officeClipart from "../assets/Home/office-clipart.png";
 import Partners from "../components/extra/Partners";
 import ContentBox from "../components/common/ContentBox";
+import mapImage from "../assets/Home/map-1.png";
+
 
 export default function Home() {
   return (
@@ -38,7 +40,38 @@ export default function Home() {
       </div>
       
       <div className="max-w-7xl mx-auto pb-20">
-        <ContentBox />
+        <div className="relative">
+          <ContentBox className="!pb-[6rem] !max-w-[70rem]">
+            <div className="flex justify-between items-center -mt-12">
+              {/* Left side text */}
+              <div className="w-1/2 pr-8 flex flex-col gap-6">
+                <h2 className="text-black text-5xl font-bold drop-shadow-sm">
+                  Revolutionizing <span className="text-gray-700">Supply Chain</span>
+                </h2>
+                <p className="text-gray-800 text-xl leading-relaxed max-w-md">
+                  Speed? Questionable. Reliability? Also questionable.
+                </p>
+                <div className="mt-2">
+                  <BlackButton href="/signup" className="hover:scale-105 transition-transform duration-200">
+                    Try For Free
+                  </BlackButton>
+                </div>
+              </div>
+
+              {/* Right side spacer */}
+              <div className="w-1/2" />
+            </div>
+          </ContentBox>
+
+          {/* Image positioned absolutely relative to outer container */}
+          <div className="absolute right-0 top-0 w-1/2 -mt-24">
+            <img 
+              src={mapImage} 
+              alt="Map" 
+              className="w-full max-w-[32rem] h-auto object-contain relative top-[2rem]"
+            />
+          </div>
+        </div>
       </div>
 
   </div>
