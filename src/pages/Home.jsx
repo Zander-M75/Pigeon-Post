@@ -3,7 +3,8 @@ import officeClipart from "../assets/Home/office-clipart.png";
 import Partners from "../components/extra/Partners";
 import ContentBox from "../components/common/ContentBox";
 import mapImage from "../assets/Home/map-1.png";
-
+import SplitSection from "../components/common/SplitSection";
+import mapImage2 from "../assets/Home/radar-map.png";
 
 export default function Home() {
   return (
@@ -74,6 +75,26 @@ export default function Home() {
         </div>
       </div>
 
+      <SplitSection
+        imageUrl={mapImage2}
+        imageAlt="Map"
+        imageOnRight={false}
+        className="py-20"
+      >
+        <h4 className="text-gray-300 text-sm uppercase tracking-wider font-medium mb-2">Flying High in the Sky</h4>
+        <h2 className="text-white text-4xl font-bold mb-6">Your Packages Are In Safe Wings.</h2>
+        <p className="text-gray-200 text-lg leading-relaxed mb-4">
+        Trained in advanced flight patterns and minor attitude problems, our elite fleet of feathered couriers guarantees timely(ish) delivery across continents (and rooftops).
+        </p>
+        <p className="text-gray-200 text-lg leading-relaxed mb-8">
+        Whether you're shipping a love letter, a USB stick, or an entire artisanal cheese wheel, trust in the beak.
+        </p>
+
+        <BlackButton href="/signup" className="hover:scale-105 transition-transform duration-200">
+          Try It Out
+        </BlackButton>
+      </SplitSection>
+      
   </div>
   )
 }
